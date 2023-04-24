@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interiors</title>
+
+<style>
+	.box{
+		margin:auto;
+		width:1140px;
+
+	}
+	.container{
+		position: fixed;
+		top:0;
+		min-width:1140px;
+		height:80px;
+		padding-top: 20px;
+		margin-bottom: 10px;
+		background-color: #36454f;
+		z-index: 100;
+		font-family: 'Lato',sans-serif;
+	}
+
+	.logo{
+		margin-top: -8px; 
+		margin-left: 20px;
+		height:200px; width:240px
+	}
+	
+	.menu2{
+		margin-top: -40px;
+	}
+	
+	ul{
+		float:right;
+		list-style: none;
+		margin-top: -120px;
+		padding-right: 40px;
+		margin-right: 20px;
+	}
+	ul li {
+		display:inline-block;	
+	}
+	ul li a{
+		text-decoration: none;
+		color:#cbcfc8;
+		padding:5px 20px;
+	}
+	ul li a:hover{
+		background-color:#778899;
+		color:#000;
+	}
+
+	ul li.active a{
+		background-color: #778899;
+		color:#000;
+	}
+	.dropbtn {
+		background-color: #4CAF50;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		cursor: pointer;
+	}
+
+	.dropdown{
+		position:relative;
+		display:inline-flex;
+	}
+	
+	.dropdown-items{
+		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 180px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		top:30px;
+	}
+
+	.dropdown-items a{
+		color:black;
+		padding:12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+	.dropdown-items a:hover{
+		background-color:#778899;
+	}
+	.dropdown:hover .dropdown-items{
+		display:block;
+	}
+	.container1{
+		width: 1140px;
+		margin :auto;
+		height:100px;
+	}
+
+	.text1{
+		color:#36454f;
+		text-align: center;
+		font-size: 50px;
+		font-family: Freestyle Script;
+	}
+
+	.slideshow{
+		margin:auto;
+		height:300px;
+		margin-left: 240px;	
+	}
+
+	.container2{
+		width: 1140px;
+		margin :auto;
+		height:400px;
+	}
+
+	.text2{
+		font-size: 20px;
+	}
+
+	.container3{
+		width: 1140px;
+		margin :auto;
+		height:400px;
+	}
+
+	.footer{ 
+		width:1140px;
+		margin:auto;
+		height:300px;
+		background-color: #36454f;
+		font-family: 'Lato',sans-serif;
+	}
+
+	.line{
+		position:absolute;
+		border:2px solid #cbcfc8;
+		height:220px;
+		margin-left: 150px;
+		margin-top: 50px;
+	}
+
+	.ourproject{
+		margin-left: 60px;
+	}
+
+	.aboutus{
+		margin-left: 60px;
+	}
+
+	.footerlogo{
+		margin-left: 80px;
+	}
+
+	ul{
+		list-style: none;
+		margin-top: -140px;
+		padding-right: 10px;
+		margin-right: 5px;
+	}
+	ul ol {
+		display:inline-block;	
+	}
+	ul ol a{
+		text-decoration: none;
+		color:#cbcfc8;
+		padding:15px 20px;
+	}
+	ul ol a:hover{
+		background-color:#778899;
+		color:#000;
+	}
+	ul ol.active a{
+		background-color: #778899;
+		color:#000;
+	}
+
+	.menu{
+		margin-right: 650px;
+	}
+
+	.contactus{
+		margin-top: -162px;
+		margin-left: 560px;
+	}
+
+		.followus{
+		margin-top: -150px;
+		margin-left: 800px;
+	}
+
+	.footer1{ 
+		width:1140px;
+		margin:auto;
+		height:50px;
+		background-color: #778899;
+		font-family: 'Lato',sans-serif;
+	}
+
+	.copyright{
+		color:white;
+		margin-left: 450px;
+		font-family: 'Lato',sans-serif;
+	}
+
+</style>
+	<script type="text/javascript">
+
+		var image1=new Image();
+		image1.src="Images/slider.jpg" ;
+		var image2=new Image() ;
+		image2.src="Images/slider1.jpg" ;
+		var image3=new Image() ;
+		image3.src="Images/slider2.jpg" ;
+		var image4=new Image() ;
+		image4.src="Images/slider3.jpg" ;
+		var image5=new Image() ;
+		image5.src="Images/slider4.jpg" ;
+	</script>
+</head>
+<body style="background-color: #d8ded9;">
+	<div class="box">
+	<div class="container">
+		<div class="logo">
+		<img src="Images/logo.png" alt="logo" height="80" width="80">
+	</div>
+
+	<div class="menu2"></div>
+	<ul>
+		<li><a href="index.html" >  <img src="Images/homebutton.png" alt="homebutton" width="18" height="18"> </a></li>
+		<li class="active"><a href="gallary.html" >Gallary</a></li>
+		<li><a href="aboutus.html">About us</a></li>
+		<li class="dropdown">
+			<a href="services.html" class="dropdown-btn">Services</a>
+			<div class="dropdown-items">
+				<a href="#Kitchen" >&nbsp;Kitchen Design</a>
+				<a href="#bedroom">&nbsp;Bedroom Design</a>
+				<a href="#bathroom">&nbsp;Bathroom Design</a>
+				<a href="#livingroom" >&nbsp;Living Room Design</a>
+			</div>
+		</li>
+		<li><a href="contact.html">Contacts</a></li>
+		
+	</ul>
+	</div>
+<br><br><br><br>
+<div class="conatiner1">
+		<div class="text1">
+		<p style="color: #36454f; font-size: 40px;">"The key to great design is capturing the spirit of the clint and essence of the space"</p>
+	</div>
+		</div>
+			<div class="slideshow">	
+			<img src="Images/slider1.jpg" name="slide" width="700" height="300" />
+
+			<script>
+
+
+			var step=1
+			function slideit(){
+
+
+			if (!document.images)
+
+			return;
+
+			document.images.slide.src=eval("image"+step+".src");
+
+
+			if (step<5)
+			step++;
+
+			else
+
+			step=1;
+
+
+			setTimeout("slideit()", 2500);
+
+			}
+			slideit()
+
+			</script>
+</div>
+
+<div class="container2">
+	<h1 style="font-family: 'Lato',sans-serif; font-size: 25px; color: #36454f;" id="Kitchen">Kitchen Design</h1>
+	<div class="text2">
+		
+		<p style="font-family: 'Lato',sans-serif; font-size: 15px;">A modest home with a spacious kitchen represents happiness. With these amazing ideas, remodel your new kitchen or the one you already have. View our most recent designs to find inspiration for your own.</p>
+	</div>
+	<a href="Images/Kitchen design pictures/kitchen pic_1.jpg">
+	<img src="Images/Kitchen design pictures/kitchen pic_1.jpg" alt="kitchen pic_1" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="Images/Kitchen design pictures/kitchen pic_2.jpg">
+	<img src="Images/Kitchen design pictures/kitchen pic_2.jpg" alt="kitchen pic_2" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="Images/Kitchen design pictures/kitchen pic_3.jpg">
+	<img src="Images/Kitchen design pictures/kitchen pic_3.jpg" alt="kitchen pic_3" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="Images/Kitchen design pictures/kitchen pic_4.jpg">
+	<img src="Images/Kitchen design pictures/kitchen pic_4.jpg" alt="kitchen pic_4" style="width:260px; height:240px;" hspace="10px;"></a>
+	
+</div>
+
+<div class="container3">
+	<h1 style="font-family: 'Lato',sans-serif; font-size: 25px; color: #36454f;" id="livingroom">Living Room Design</h1>
+	<div class="text2">
+		
+		<p style="font-family: 'Lato',sans-serif; font-size: 15px;">Your living room is decorated? If you've been seeking for living room inspiration, from décor to furniture design, you've come to the correct spot. View our most recent designs to find inspiration for your own.</p>
+	</div>
+	<a href="Images/Living room pictures/livingroom pic_1.jpg">
+	<img src="Images/Living room pictures/livingroom pic_1.jpg" alt="livingroom pic_1" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="Images/Living room pictures/livingroom pic_2.jpg">
+	<img src="Images/Living room pictures/livingroom pic_2.jpg" alt="livingroom pic_2" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="Images/Living room pictures/livingroom pic_3.jpg">
+	<img src="Images/Living room pictures/livingroom pic_3.jpg" alt="livingroom pic_3" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="Images/Living room pictures/livingroom pic_4.jpg">
+	<img src="Images/Living room pictures/livingroom pic_4.jpg" alt="livingroom pic_4" style="width:260px; height:240px;" hspace="10px;"></a>
+</div>
+
+
+<div class="container3">
+	<h1 style="font-family: 'Lato',sans-serif; font-size: 25px; color: #36454f;" id="bedroom">Bedroom Design</h1>
+	<div class="text2">
+		
+		<p style="font-family: 'Lato',sans-serif; font-size: 15px;">There are many bedroom designs available with striking colour schemes.Create the bedroom of your dreams with our help. View our most recent designs to find inspiration for your own.</p>
+	</div>
+	<a href="Images/Bedroom pictures/bedroom pic_1.jpg">
+	<img src="Images/Bedroom pictures/bedroom pic_1.jpg" alt="bedroom pic_1" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="Images/Bedroom pictures/bedroom pic_2.jpg">
+	<img src="Images/Bedroom pictures/bedroom pic_2.jpg" alt="bedroom pic_2" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="Images/Bedroom pictures/bedroom pic_3.jpg">
+	<img src="Images/Bathroom pictures/bathroom pic_3.jpg" alt="bedroom pic_3" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="Images/Bedroom pictures/bedroom pic_4.jpg">
+	<img src="Images/Bedroom pictures/bedroom pic_4.jpg" alt="bedroom pic_4" style="width:260px; height:240px;" hspace="10px;"></a>
+</div>
+
+<div class="container3">
+	<h1 style="font-family: 'Lato',sans-serif; font-size: 25px; color: #36454f;" id="bathroom">Bathroom Design</h1>
+	<div class="text2">
+		
+		<p style="font-family: 'Lato',sans-serif; font-size: 15px;">Create a unique bathroom with our help. View our most recent designs to find inspiration for your own.</p>
+	</div>
+	<a href="Images/Bathroom pictures/bathroom pic_1.jpg">
+	<img src="Images/Bathroom pictures/bathroom pic_1.jpg" alt="bathroom pic_1" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="Images/Bathroom pictures/bathroom pic_2.jpg">
+	<img src="Images/Bathroom pictures/bathroom pic_2.jpg" alt="bathroom pic_2" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="Images/Bathroom pictures/bathroom pic_3.jpg">
+	<img src="Images/Bathroom pictures/bathroom pic_3.jpg" alt="bathroom pic_3" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="Images/Bathroom pictures/bathroom pic_4.jpg">
+	<img src="Images/Bathroom pictures/bathroom pic_4.jpg" alt="bathroom pic_4" style="width:260px; height:240px;" hspace="10px;"></a>
+</div>
+
+<div class="footer">
+	
+	<div class="line"></div>
+	<div class="footerlogo">
+	<img src="Images/footer_logo.png" alt="logo" height="200" width="250">
+</div>
+<div class="menu">
+
+	<ul>
+		<ol style="color: whitesmoke; font-size: 20px;">&nbsp;&nbsp;&nbsp;MENU</ol><br><br>
+		<ol><a href="aboutus.html">About us</a></ol><br><br>
+		<ol><a href="services.html">Services</a></ol><br><br>
+		<ol><a href="contact.html">Process</a></ol><br><br>
+		<ol><a href="contact.html">Contact us</a></ol><br><br>
+	</ul>
+
+</div>
+<div class="contactus">
+    <p style="color: whitesmoke; font-size:20px;">CONTACT US</p>
+    <p style="color: #cbcfc8;">+977-981234567</p>
+    <p style="color: #cbcfc8;">Write us :<a href="https://www.gmail.com" target="_blank" style="color: #cbcfc8;"> interio.interior@gmail.com</p></a>
+	<p style="color: #cbcfc8;">facebook.com/interiors</p>
+</div>
+
+<div class="followus">
+	<p style="color: whitesmoke; font-size:20px;">FOLLOW US</p>
+	<a href="https://www.facebook.com" target="_blank"><img src="Images/facebook.png" style="padding: 10px;" ></a>
+	<a href="https://www.instagram.com" target="_blank"><img src="Images/instagram.png" style="padding: 10px;"></a>
+	<a href="https://www.twitter.com" target="_blank"><img src="Images/twitter.png" style="padding: 10px;" height="30px" width="30px" ></a>
+</div>
+
+</div>
+<div class="footer1">
+	<div class="copyright">
+		<br>
+©Copyright 2023. All rights reserved.
+</div>
+
+</div>
+
+</div>
+</body>
+</html>

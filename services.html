@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interiors</title>
+
+<style>
+	.box{
+		margin:auto;
+		width:1140px;
+	}
+
+	.container{
+		position: fixed;
+		top:0;
+		min-width:1140px;
+		height:80px;
+		padding-top: 20px;
+		margin-bottom: 10px;
+		background-color: #36454f;
+		z-index: 100;
+		font-family: 'Lato',sans-serif;
+	}
+
+	.logo{
+		
+		margin-top: -8px; 
+		margin-left: 20px;
+		height:200px; width:240px
+	}
+
+	.menu3{
+		margin-top: -39px;
+	}
+	
+	ul{
+		float:right;
+		list-style: none;
+		margin-top: -120px;
+		padding-right: 40px;
+		margin-right: 20px;
+	}
+	ul li {
+		display:inline-block;
+	}
+	ul li a{
+		text-decoration: none;
+		color:#cbcfc8;
+		padding:5px 20px;
+	}
+	ul li a:hover{
+		background-color:#778899;
+		color:#000;
+	}
+	ul li.active a{
+		background-color: #778899;
+		color:#000;
+	}
+
+	.dropbtn {
+		background-color: #4CAF50;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		cursor: pointer;
+	}
+	.dropdown{
+		position:relative;
+		display:inline-flex;
+	}
+	.dropdown-items{
+		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 180px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		top:30px;
+	}
+	.dropdown-items a{
+		color:black;
+		padding:12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+	.dropdown-items a:hover{
+		background-color:#778899;
+	}
+	.dropdown:hover .dropdown-items{
+		display:block;
+	}
+
+	.banner {
+		position: relative;
+		width: 1140px;
+		top:80px;
+	}
+
+	.ourservices{
+		position: relative;
+		background-color:#71706b;
+		margin:auto;
+		width:420px;
+		height:350px;
+		top:50px;
+		left:-330px;
+	}
+
+	.titleholder1{
+		width:420px;
+		margin:auto;
+		height:50px;
+		background-color: #778899;
+	}
+
+	.text{
+		text-align: center;
+		padding-top: 20px;
+		color:white;
+		margin-top: -85px;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	.image1{
+		margin-left: 500px;
+		margin-top: -268px;
+	}
+
+	.banner1{
+		margin-top: 130px;
+	}
+
+	.titleholder2{
+		width:300px;
+		margin:auto;
+		height:50px;
+		background-color: #778899;
+	}
+
+	.spaceplanning{
+		position: relative;
+		background-color:#71706b;
+		margin:auto;
+		width:300px;
+		height:350px;
+		margin-top:-180px;
+		left:-330px;
+	}
+
+	.customwoodwork{
+		position: relative;
+		background-color:#71706b;
+		margin:auto;
+		width:300px;
+		height:350px;
+		margin-top:-350px;
+		left:10px;
+	}
+
+	.interiorarchitecture{
+		position: relative;
+		background-color:#71706b;
+		margin:auto;
+		width:300px;
+		height:350px;
+		margin-top:-350px;
+		left:350px;
+	}
+
+	.text1{
+		margin-top: -85px;
+		text-align: center;
+		padding-top: 30px;
+		color:white;
+		padding-left: 12px;
+		padding-right: 12px;
+		font-family: 'Lato',sans-serif;
+	}
+
+	.furnituredesign{
+		position: relative;
+		background-color:#71706b;
+		margin:auto;
+		width:300px;
+		height:350px;
+		margin-top: 20px;
+		left:-330px;
+	}
+
+	.budgetmanagement{
+		position: relative;
+		background-color:#71706b;
+		margin:auto;
+		width:300px;
+		height:350px;
+		margin-top: -350px;
+		left:10px;
+	}
+
+	.interiordesigns{
+		position: relative;
+		background-color:#71706b;
+		margin:auto;
+		width:300px;
+		height:350px;
+		margin-top: -350px;
+		left:350px;
+	}
+
+	.footer{ 
+			width:1140px;
+			margin:auto;
+			height:300px;
+			background-color: #36454f;
+	}
+	.line{
+		position:absolute;
+		border:2px solid #cbcfc8;
+		height:220px;
+		margin-left: 150px;
+		margin-top: 50px;
+	}
+
+	.ourproject{
+		margin-left: 60px;
+	}
+
+	.aboutus{
+		margin-left: 60px;
+	}
+
+	.footerlogo{
+		margin-left: 80px;
+	}
+
+	ul{
+		list-style: none;
+		margin-top: -140px;
+		padding-right: 10px;
+		margin-right: 5px;
+	}
+	ul ol {
+		display:inline-block;	
+	}
+	ul ol a{
+		text-decoration: none;
+		color:#cbcfc8;
+		padding:15px 20px;
+	}
+	ul ol a:hover{
+		background-color:#778899;
+		color:#000;
+	}
+	ul ol.active a{
+		background-color: #778899;
+		color:#000;
+	}
+
+	.menu{
+		margin-right: 650px;
+	}
+
+	.contactus{
+		margin-top: -162px;
+		margin-left: 560px;
+	}
+
+	.followus{
+		margin-top: -150px;
+		margin-left: 800px;
+	}
+
+	.footer1{ 
+		width:1140px;
+		margin:auto;
+		height:50px;
+		background-color: #778899;
+	}
+	.copyright{
+		color:whitesmoke;
+		margin-left: 450px;
+	}
+	
+</style>
+</head>
+<body style="background-color: #d8ded9;">
+	<div class="box">
+	<div class="container">
+		<div class="logo">
+		<img src="Images/logo.png" alt="logo" height="80" width="80">
+	</div>
+
+	<div class="menu3"></div>
+	<ul>
+		<li><a href="index.html" >  <img src="Images/homebutton.png" alt="homebutton" width="18" height="18"> </a></li>
+		<li><a href="gallary.html">Gallary</a></li>
+		<li><a href="aboutus.html">About us</a></li>
+		<li class="active" class="dropdown">
+			<a href="services.html" class="dropdown-btn">Services</a>
+			<div class="dropdown-items">
+				<a href="gallary.html" target="_blank">&nbsp;Kitchen Design</a>
+				<a href="gallary.html" target="_blank">&nbsp;Bedroom Design</a>
+				<a href="gallary.html" target="_blank">&nbsp;Bathroom Design</a>
+				<a href="gallary.html" target="_blank">&nbsp;Living Room Design</a>
+			</div>
+		</li>
+		<li><a href="contact.html">Contacts</a></li>
+		
+	</ul>
+	</div>
+
+<div class="banner">
+<img src="Images/services page banner.jpg" alt="services page banner">
+
+<div class="ourservices">
+	<div class="titleholder1">
+	</div>
+	<div class="text">
+	<h1 style="color: white; font-family: 'Lato',sans-serif;">Let's Design</h1>
+	<p style="font-size: 15px; font-family: 'Lato',sans-serif;">Everyone aspires to showcase their creativity. Numerous design services are among our offerings. Full home design analysis, space planning, design concept creation, furniture plans, custom design, construction drawings, product specifications, buying, material installation, and project management are all included.We also carry out daily tasks that improve people's lives, communities, and the environment.</p>
+	<h2 style="color: black; font-family: Freestyle Script; font-size: 40px;"><i>Good Designs for Good People!</i></h2>
+
+		
+</div>
+
+		<div class="image1">
+<img src="Images/services pic_1.jpg" alt="services pic_1" height="350px" width="580px">
+</div>
+	
+
+</div>
+
+
+<div class="banner1">
+	<img src="Images/services page banner_2.jpg" alt="services page banner_2">
+
+</div>
+<div class="spaceplanning">
+	<div class="titleholder2"></div>
+	<div class="text1">
+		<h1 style="font-size: 25px;">Space Planning</h1>
+		<p>A key step in the interior design process is space planning. It is done with a thorough investigation of 
+			how space is used to fulfil each area's function. The circulation patterns that depict how people will move 
+			across the area will also be specified in the space plan. The furniture placement and activities that will 
+			take place in each zone are defined by the designer. It entails drawing out a space plan, which depicts how 
+			functional pieces are arranged within a space.</p>
+
+		<button type="button" class="readmorebtn">Read More</button>
+	</div>
+	
+</div>
+
+<div class="customwoodwork">
+	<div class="titleholder2"></div>
+		<div class="text1">
+		<h1 style="font-size: 25px;">Customwood work</h1>
+		<p>We've worked with a talented artisan for years to create gorgeous furniture in the Newari design. 
+			From conception to implementation, we collaborate with a fantastic group of industry specialists. 
+			Thanks to their hard work and innovation, our team is able to confidently offer goods and services to our customers. 
+			For our projects, our organisation offers bespoke design.</p>
+		<button type="button" class="readmorebtn">Read More</button>
+	</div>
+</div>
+
+<div class="interiorarchitecture">
+	<div class="titleholder2"></div>
+		<div class="text1">
+		<h1 style="font-size: 25px;">Interior architecture</h1>
+		<p>Interior architecture is the process of designing a structure or shelter from the inside out or creating a 
+			fresh interior for a particular kind of fixable dwelling. In terms of architecture, interior architecture 
+			is the design of an interior. It involves using and reusing the area. It is the method used to create interiors 
+			that take into account every feature of the house and how it is used.</p>
+
+		<button type="button" class="readmorebtn">Read More</button>
+	</div>
+</div>
+<div class="furnituredesign">
+	<div class="titleholder2"></div>
+	<div class="text1">
+		<h1 style="font-size: 25px;">Furniture Design</h1>
+		<p>Our firm creates a balanced, functional environment with new, old, custom-made, custom-designed, 
+			or built-in elements. We make an effort to incorporate elements of Newari traditions and customs 
+			into the furniture we produce in an old-fashioned, antique style. Our furniture is made in a 
+			manner that it reflects the pleasant odour in the room.</p>
+
+		<button type="button" class="readmorebtn">Read More</button>
+	</div>
+	</div>
+
+<div class="budgetmanagement">
+	<div class="titleholder2"></div>
+	<div class="text1">
+		<h1 style="font-size: 25px;">Budget Management</h1>
+		<p>We are all familiar with the strategy for developing an interior design budget for a design job. 
+			Our business collaborates with clients on all projects, no matter how big or little. On every project,
+			 no matter how big or little, our well-known support will always be in accordance with your budget. 
+			 With the money set up for interior design, we finish the project within the allotted period.</p>
+
+		<button type="button" class="readmorebtn">Read More</button>
+	</div>
+</div>
+
+
+<div class="interiordesigns">
+	<div class="titleholder2"></div>
+	<div class="text1">
+		<h1 style="font-size: 25px;">Interior Designs</h1>
+		<p>Interior design is the practise of enhancing a building's interior to create a more aesthetically 
+			pleasant atmosphere for those occupying the area. We guide our clients through the crucial choices 
+			that determine the interior design of the structures. Conceptual development, space planning, site 
+			inspections, analysis, interaction, building management, and design execution are all included.</p>
+			
+		<button type="button" class="readmorebtn">Read More</button>
+	</div>
+</div>
+<br><br><br>
+<div class="footer">
+	
+	<div class="line"></div>
+	<div class="footerlogo">
+	<img src="Images/footer_logo.png" alt="logo" height="200" width="250">
+</div>
+<div class="menu">
+
+	<ul>
+		<ol style="color: whitesmoke; font-size: 20px;">&nbsp;&nbsp;&nbsp;MENU</ol><br><br>
+		<ol><a href="aboutus.html">About us</a></ol><br><br>
+		<ol><a href="services.html">Services</a></ol><br><br>
+		<ol><a href="contact.html">Process</a></ol><br><br>
+		<ol><a href="contact.html">Contact us</a></ol><br><br>
+	</ul>
+
+</div>
+<div class="contactus">
+    <p style="color: whitesmoke; font-size:20px;">CONTACT US</p>
+    <p style="color: #cbcfc8;">+977-981234567</p>
+    <p style="color: #cbcfc8;">Write us :<a href="https://www.gmail.com" target="_blank" style="color: #cbcfc8;"> interio.interior@gmail.com</p></a>
+	<p style="color: #cbcfc8;">facebook.com/interiors</p>
+
+</div>
+
+<div class="followus">
+	<p style="color: whitesmoke; font-size:20px;">FOLLOW US</p>
+	<a href="https://www.facebook.com" target="_blank"><img src="Images/facebook.png" style="padding: 10px;" ></a>
+	<a href="https://www.instagram.com" target="_blank"><img src="Images/instagram.png" style="padding: 10px;"></a>
+	<a href="https://www.twitter.com" target="_blank"><img src="Images/twitter.png" style="padding: 10px;" height="30px" width="30px"></a>
+</div>
+
+</div>
+<div class="footer1">
+	<div class="copyright">
+		<br>
+©Copyright 2023. All rights reserved.
+</div>
+
+</div>
+
+</div>
+</body>
+</html>
